@@ -130,13 +130,13 @@
 
 <div class="introduction row w-100 text-justify">
     <div class="col w-100">
-        <p>Currently, I am an M.Sc. student in the <a href="https://www.thss.tsinghua.edu.cn/en/">School of Software</a> at <a href="https://www.tsinghua.edu.cn/en/">Tsinghua University</a>, and I am doing security research in <a href="www.wingtecher.com">Software System Security Assurance Group</a>, supervised by Prof.<a href="https://sites.google.com/site/jiangyu198964/home">Yu Jiang</a>.
+        <p>Currently, I am an M.Sc. student in the <a href="https://www.thss.tsinghua.edu.cn/en/">School of Software</a> at <a href="https://www.tsinghua.edu.cn/en/">Tsinghua University</a>, and I am doing security research in <a href="http://www.wingtecher.com">Software System Security Assurance Group</a>, supervised by Prof. <a href="https://sites.google.com/site/jiangyu198964/home">Yu Jiang</a>.
 I plan to apply for a Ph.D. degree after graduation (in 2023) to continue my research on system security.
 Please send me an email if you have interests in me. Here is a brief intro on my areas:</p>
 <ul>
-<li>I am extremely enthusiastic about the architecture and design of large systems. Most projects I wrote in the past contain more than 10,000 lines of code. I&rsquo;ve studied multiple large systems via reading their source code, e.g., Linux kernel and leveldb.</li>
+<li>I am extremely enthusiastic about the architecture and design of large systems. Most projects I wrote in the past consist of more than 10,000 lines of code. I&rsquo;ve studied multiple large systems via reading their source code, e.g., Linux kernel and leveldb.</li>
 <li>Automated vulnerability discovery in large systems is my current research area. The major approaches I used include fuzz testing and symbolic execution. I&rsquo;m the author of <a href="https://github.com/SunHao-0/healer">Healer</a>, a kernel fuzzer inspired by Syzkaller. I also wrote another symbolic execution based tool for the Linux kernel, but not been published yet.</li>
-<li>I&rsquo;m an entry-level fan of programming languages, interested in programming language theory (but have not yet delved into it). I&rsquo;ve mastered more than 10 programming languages, including system-level language, GC-based language, functional language, etc. <a href="https://www.rust-lang.org/">Rust</a> is currently my preferred language (Hi there, Rustaceans!).</li>
+<li>I&rsquo;m an entry-level fan of programming language, interested in programming language theory (but have not yet delved into it). I&rsquo;ve mastered more than 10 programming languages, including system-level language, GC-based language, functional language, etc. <a href="https://www.rust-lang.org/">Rust</a> is currently my preferred language (Hi there, Rustaceans!).</li>
 </ul>
 
     </div>
@@ -527,13 +527,22 @@ Please send me an email if you have interests in me. Here is a brief intro on my
         <div class="project row w-100">
             <div class="section-1 w-100">
                 <span class="project-title">
-                    Healer: kernel fuzzer inspired by Syzkaller. Similar to Syzkaller, Healer uses Syzlang description to generate sequencese of syscalls, and finds kernel bugs by continuously executing the generated sequences to cause kernel crashes. Unlike Syzkaller, Healer detects the influence relationships between syscalls with a learning algorithm and uses a different architectural design than Syzkaller.
+                    Healer: kernel fuzzer inspired by Syzkaller.
                 </span>
             </div>
+	   
+	    
+	    
+	    <div class="section-2 text-muted w-100">
+                <span class="project-desc">
+                    Healer uses Syzlang descriptions to generate sequencese of syscalls like Syzkaller. Unlike Syzkaller, Healer detects the influence relationships between syscalls with a learning algorithm and uses a different architecture.
+                </span>
+            </div>
+	    
 
             
             
-            <div class="section-2  w-100">
+            <div class="section-3  w-100">
                 
                 
                 <a class="main_color text-decoration-none rounded " href="https://github.com/SunHao-0/healer" target="_blank">
@@ -550,13 +559,22 @@ Please send me an email if you have interests in me. Here is a brief intro on my
         <div class="project row w-100">
             <div class="section-1 w-100">
                 <span class="project-title">
-                    libtcc: Rust Binding for Tcc Compiler. TinyCC (or tcc) is short for Tiny C Compiler. It&#39;s a SMALL, FAST, UNLIMITED,SAFE C language Compiler. The crate `libtcc` provide a safe wrapper for it, which supports jit compilation and low level control of code generation.
+                    libtcc: Rust Binding for Tcc Compiler.
                 </span>
             </div>
+	   
+	    
+	    
+	    <div class="section-2 text-muted w-100">
+                <span class="project-desc">
+                    TinyCC (or tcc) is short for Tiny C Compiler. It&#39;s a small, fast, unlimited, safe C language compiler. `libtcc` provide a safe wrapper for it, which supports jit compilation and low level control of code generation.
+                </span>
+            </div>
+	    
 
             
             
-            <div class="section-2  w-100">
+            <div class="section-3  w-100">
                 
                 
                 <a class="main_color text-decoration-none rounded " href="https://github.com/SunHao-0/libtcc" target="_blank">
@@ -575,6 +593,7 @@ Please send me an email if you have interests in me. Here is a brief intro on my
     </div>
     
 </div>
+
 </div>
 </div>
 
