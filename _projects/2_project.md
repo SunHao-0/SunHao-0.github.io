@@ -30,4 +30,4 @@ To achieve this, KSG utilizes Clang Static Analyzer, a source code level symboli
 KSG is proved to be practical and effective by the evaluation results that 2433 specifications can be automatically generated and 23 vulnerabilities were discovered. 
 The tool is implemented with two eBPF program for extry extractioin, multiple CSA checkers for type collection (in C++), and a simple control program for automating the whole process (in rust), with roughly 8000 lines of code.
 For some reason, I can not make the source code public avaliable, sorry for that.
-For more information, checkout this ATC '22 [paper](assets/pdf/KSG.pdf) please.
+For more information, checkout this ATC '22 [paper](assets/pdf/KSG_atc22.pdf) please.
