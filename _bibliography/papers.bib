@@ -1,0 +1,83 @@
+---
+---
+
+@inproceedings {KSG,
+author = {Hao, Sun and Yuheng, Shen and Jianzhong, Liu and Yiru, Xu and Yu, Jiang},
+title = {{KSG: Augmenting Kernel Fuzzing with System Call Specification Generation}},
+year = {2022},
+booktitle = {2022 USENIX Annual Technical Conference (USENIX ATC 22)},
+publisher = {USENIX Association},
+abstract = {Kernel fuzzing is a dynamic testing technique that has successfully found numerous kernel vulnerabilities. However, existing kernel fuzzers, such as Syzkaller, depend on system call specifications to generate test cases. Writing such specifications requires an immense amount of domain knowledge while being extremely laborious. Meanwhile, automated generation of the specification is still an open problem due to the complexity of the kernel, including entry function extraction and input type identification. As a result, the current amount of system call information is insufficient to test the entire kernel code base thoroughly. Syzkaller covers an average of 38% of Linux kernel code with current Syzlang specifications for a prolonged time of fuzzing. In this paper, we propose KSG to generate system call specifications for kernel fuzzers automatically. First, it utilizes probe-based tracing to extract entry functions accurately. Then, it uses path-sensitive analysis to collect precise input types and range constraints in each execution path of entry functions. Based on the aforementioned information, KSG generates specifications in the domain language Syzlang, which is used by most kernel fuzzers. We evaluated KSG on several versions of the Linux kernel. It automatically generated 2433 unique specifications. Leveraging the newly generated specifications, Syzkaller and Moonshine achieved coverage improvements of 22% and 23% respectively. Furthermore, our approach assisted fuzzers to discover 26 previously unknown bugs, where 13 and 6 bugs were fixed and assigned with CVEs, respectively.},
+
+abbr={ATC '22},
+selected={true},
+pdf={KSG_atc22.pdf},
+slides = {KSG_slides.pdf},
+bibtex_show={true},
+}
+
+@inproceedings{Healer,
+author = {Hao, Sun and Yuheng, Shen and Cong, Wang and Jianzhong, Liu and Yu, Jiang and Ting, Chen and Aiguo, Cui},
+title = {HEALER: Relation Learning Guided Kernel Fuzzing},
+year = {2021},
+isbn = {9781450387095},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3477132.3483547},
+doi = {10.1145/3477132.3483547},
+abstract = {Modern operating system kernels are too complex to be free of bugs. Fuzzing is a promising approach for vulnerability detection and has been applied to kernel testing. However, existing work does not consider the influence relations between system calls when generating and mutating inputs, resulting in difficulties when trying to reach into the kernel's deeper logic effectively.In this paper, we propose HEALER, a kernel fuzzer that improves fuzzing's effectiveness by utilizing system call relation learning. HEALER learns the influence relations between system calls by dynamically analyzing minimized test cases. Then, HEALER utilizes the learned relations to guide input generation and mutation, which improves the quality of test cases and the effectiveness of fuzzing. We implemented HEALER and evaluated its performance on recent versions of the Linux kernel. Compared to state-of-the-art kernel fuzzers such as Syzkaller and Moonshine, HEALER improves branch coverage by 28% and 21%, while achieving a speedup of 2.2x and 1.8x, respectively. In addition, HEALER detected 218 vulnerabilities, 33 of which are previously unknown and have been confirmed by the corresponding kernel maintainers.},
+booktitle = {Proceedings of the ACM SIGOPS 28th Symposium on Operating Systems Principles},
+pages = {344--358},
+numpages = {15},
+keywords = {System Call Relation Learning, Kernel Fuzzing},
+location = {Virtual Event, Germany},
+series = {SOSP '21},
+
+abbr={SOSP '21},
+selected={true},
+pdf={healer_sosp21.pdf},
+slides = {healer_slides.pdf},
+poster = {healer_poster.pdf},
+code = {https://github.com/SunHao-0/healer},
+bibtex_show={true}
+}
+
+@article{Rtkaller,
+author = {Yuheng, Shen and Hao, Sun and Yu, Jiang and Heyuan, Shi and Yixiao, Yang and Wanli, Chang},
+title = {{Rtkaller: State-Aware Task Generation for RTOS Fuzzing}},
+year = {2021},
+issue_date = {October 2021},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {20},
+number = {5s},
+issn = {1539-9087},
+url = {https://doi.org/10.1145/3477014},
+doi = {10.1145/3477014},
+journal = {ACM Trans. Embed. Comput. Syst.},
+month = {sep},
+articleno = {83},
+numpages = {22},
+keywords = {RTOS, task generation, Fuzz testing, vulnerability detection},
+abstract = {A real-time operating system (RTOS) is an operating system designed to meet certain real-time requirements. It is widely used in embedded applications, and its correctness is safety-critical. However, the validation of RTOS is challenging due to its complex real-time features and large code base. In this paper, we propose Rtkaller, a state-aware kernel fuzzer for the vulnerability detection in RTOS. First, Rtkaller implements an automatic task initialization to transform the syscall sequences into initial tasks with more real-time information. Then, a coverage-guided task mutation is designed to generate those tasks that explore more in-depth real-time related code for parallel execution. Moreover, Rtkaller realizes a task modification to correct those tasks that may hang during fuzzing. We evaluated it on recent versions of rt-Linux, which is one of the most widely used RTOS. Compared to the state-of-the-art kernel fuzzers Syzkaller and Moonshine, Rtkaller achieves the same code coverage at the speed of 1.7X and 1.6X , gains an increase of 26.1% and 22.0% branch coverage within 24 hours respectively. More importantly, Rtkaller has confirmed 28 previously unknown vulnerabilities that are missed by other fuzzers.},
+
+abbr={EMSOFT '21},
+pdf={rtkaller_emsoft21.pdf},
+bibtex_show={true},
+}
+
+@inproceedings{GoSanitizer,  
+author={Cong, Wang and Hao, Sun and Yuwen, Xu and Yu, Jiang and Huafeng, Zhang and Ming, Gu},  
+booktitle={2019 IEEE International Symposium on Software Reliability Engineering Workshops (ISSREW)},   
+title={Go-Sanitizer: Bug-Oriented Assertion Generation for Golang},   
+year={2019},  
+volume={},  
+number={},  
+abstract={Go programming language (Golang) is widely used, and the security issue becomes increasingly important because of its extensive applications. Most existing validation techniques, such as fuzz testing and unit testing, mainly focus on crashes detection and coverage improvements. However, it is challenging for test engines to perceive common program bugs such as loss of precision and integer overflow. In this paper, we propose Go-Sanitizer, an effective bug-oriented assertion generator for Golang, which is able to achieve a better performance in finding program bugs. Firstly, we manually analyze the Common Weakness Enumeration (CWE) and summarize the applicabilities on Golang. Secondly, we design a generator to automatically insert several bug-oriented assertions to the proper locations of the target program. Finally, we can utilize the traditional validation techniques such as fuzz and unit testing to test the programs with inserted assertions, and Go-Sanitizer reports bugs via the failures of assertions. For evaluation, we apply Go-Sanitizer to Badger, a widely-used database software, and successfully discovers 12 previously unreported program bugs, which can not be detected by pure fuzzer such as Go-Fuzz or unit testing methods.},
+pages={36--41},  
+doi={10.1109/ISSREW.2019.00039},
+
+abbr={ISSRE '19},
+pdf={gosanitizer_issre19.pdf},
+bibtex_show={true},
+}
