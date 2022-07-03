@@ -19,9 +19,9 @@ social: true
 
 Since 2020, I have been conducting system security research as a master student advised by Prof. [Yu Jiang](https://sites.google.com/site/jiangyu198964/home) in the system security assurance [group](http://www.wingtecher.com/personen) at [Tsinghua University](https://www.tsinghua.edu.cn/en/).
 The lab focuses on improving the security of the infrastructural software stack, and my work there lies in operating system kernels, with an emphasis on Linux kernel security.
-The fundamental goal of my system security research is to improve the correctness of OS kernels, one of the most complicated software, via finding and eliminating the vulnerabilities with the approaches called *fuzz testing* and *symbolic execution*. 
+The fundamental goal of my research is to improve the correctness of OS kernels, one of the most complicated software, via finding and eliminating the vulnerabilities with the approaches called *fuzz testing* and *symbolic execution*. 
 
-Throughout the past years' research, what I continuously pursue is approaches and algorithms that can solve problems **elegantly**, and, more importantly, can be applied in practice through solid implementation thus making **real impact** to the software industry. For example, I designed and implemented a kernel fuzzer callded [*Healer*](https://github.com/SunHao-0/healer) with 17,000 lines of `rust` code, which is open-sourced and has already found more than 100 vulnerabilities in Linux kernel. 
+Throughout the past years' research, what I continuously pursue is approaches and algorithms that can solve problems **elegantly**, and, more importantly, can be applied in practice through solid implementation thus making **real impact** to the software industry. For example, I designed and implemented a kernel fuzzer callded [*Healer*](https://github.com/SunHao-0/healer) in `rust`, which is open-sourced and has already found more than 100 vulnerabilities in Linux kernel. 
 This work was accepted by [*SOSP '21*](https://dl.acm.org/doi/10.1145/3477132.3483547).
 My recent work KSG, a kernel specification generator, utilizes a probe-based tracing and symbolic execution-based type propagation algorithm to generate system call specifications for kernel fuzzer automatically.
 This work has led to the discovery of 23 vulnerabilities in Linux kernel and was accepted by **ATC '22**.
