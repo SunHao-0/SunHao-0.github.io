@@ -12,31 +12,44 @@ layout: default
         </header>
 
         <article>
-          {% if page.profile -%}
-          <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
-            {%- if page.profile.image %}
-              {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
-
-              {% if page.profile.image_cicular %}
-              {%- assign profile_image_class = "img-fluid z-dept-1 rounded-circle" -%}
-              {% else %}
-              {%- assign profile_image_class = "img-fluid z-dept-1 rounded" -%}
-              {% endif %}
-
-              {% include figure.html 
-              path=profile_image_path 
-              class=profile_image_class
-              alt=page.profile.image -%}
-            {% endif -%}
-            {%- if page.profile.address %}
-            <div class="address">
-              {{ page.profile.address }}
-            </div>
-            {%- endif %}
+          <div class="table-responsive width:100%">
+            <table class="table table-sm table-borderless">
+            <tr>
+              <td width="30%"" height="180">
+                <div class="profile-img">
+                  {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
+      
+                  {% if page.profile.image_cicular %}
+                  {%- assign profile_image_class = "img-fluid z-dept-1 rounded-circle" -%}
+                  {% else %}
+                  {%- assign profile_image_class = "img-fluid z-dept-1 rounded" -%}
+                  {% endif %}
+      
+                  {% include figure.html 
+                  path=profile_image_path 
+                  class=profile_image_class
+                  alt=page.profile.image -%}
+                </div>
+              </td>
+              <td "width:70%">
+                <div class="profile-content">
+                  <p><b><big>{{ page.profile.name }}</big></b><br>
+                  {{ page.profile.degree }}<br>
+                  {{ page.profile.group }}<br>
+                  {{ page.profile.institute }}<br>
+                  {{ page.profile.university }}<br>
+                  <br>
+                  <b>Email: </b>{{ page.profile.email}}<br>
+                  {{ page.profile.location}} <br>
+                  </p>
+                </div>
+              </td>
+            </tr>
+            
+            </table>
           </div>
-          {%- endif %}
-
-          <div class="clearfix">
+         
+          <div class="statement">
             {{ content }}
           </div>
 
