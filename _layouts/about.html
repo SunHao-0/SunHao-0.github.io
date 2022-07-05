@@ -15,7 +15,7 @@ layout: default
           <div class="table-responsive width:100%">
             <table class="table table-sm table-borderless">
             <tr>
-              <td width="30%"" height="180">
+              <td width="30%"" height=""50>
                 <div class="profile-img">
                   {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
       
@@ -28,6 +28,7 @@ layout: default
                   {% include figure.html 
                   path=profile_image_path 
                   class=profile_image_class
+                  height=50
                   alt=page.profile.image -%}
                 </div>
               </td>
@@ -45,11 +46,9 @@ layout: default
                 </div>
               </td>
             </tr>
-            
             </table>
           </div>
-         
-          <div class="statement">
+          <div class="clearfix">
             {{ content }}
           </div>
 
@@ -57,21 +56,23 @@ layout: default
           <!-- News -->
           {%- include news.html %}
           {%- endif %}
+          
           {% if page.selected_papers -%}
             <!-- Selected papers -->
             {%- include selected_papers.html %}
           {%- endif %}
+          
+          {%- include software.html %}
+
           {%- if page.social %}
           <!-- Social -->
           <div class="social">
             <div class="contact-icons">
             {% include social.html %}
             </div>
-
             <div class="contact-note">
               {{ site.contact_note }}
             </div>
-            
           </div>
           {%- endif %}
         </article>

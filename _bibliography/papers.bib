@@ -62,6 +62,7 @@ keywords = {RTOS, task generation, Fuzz testing, vulnerability detection},
 abstract = {A real-time operating system (RTOS) is an operating system designed to meet certain real-time requirements. It is widely used in embedded applications, and its correctness is safety-critical. However, the validation of RTOS is challenging due to its complex real-time features and large code base. In this paper, we propose Rtkaller, a state-aware kernel fuzzer for the vulnerability detection in RTOS. First, Rtkaller implements an automatic task initialization to transform the syscall sequences into initial tasks with more real-time information. Then, a coverage-guided task mutation is designed to generate those tasks that explore more in-depth real-time related code for parallel execution. Moreover, Rtkaller realizes a task modification to correct those tasks that may hang during fuzzing. We evaluated it on recent versions of rt-Linux, which is one of the most widely used RTOS. Compared to the state-of-the-art kernel fuzzers Syzkaller and Moonshine, Rtkaller achieves the same code coverage at the speed of 1.7X and 1.6X , gains an increase of 26.1% and 22.0% branch coverage within 24 hours respectively. More importantly, Rtkaller has confirmed 28 previously unknown vulnerabilities that are missed by other fuzzers.},
 
 abbr={EMSOFT '21},
+selected={true},
 pdf={rtkaller_emsoft21.pdf},
 bibtex_show={true},
 }
@@ -78,6 +79,7 @@ pages={36--41},
 doi={10.1109/ISSREW.2019.00039},
 
 abbr={ISSRE '19},
+selected={true},
 pdf={gosanitizer_issre19.pdf},
 bibtex_show={true},
 }
