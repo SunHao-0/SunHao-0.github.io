@@ -23,11 +23,11 @@ The idea of KSG to address this issue is that how entries are registered into th
 
 
 The second challenge is that the type of a parameter of a system call is not fixed, i.e., it can be cast to different types acoss execution paths, which is a really common design pattern in Linux kernel. 
-The goal of KSG is to generate specification for each execution of a entry. 
+The goal of KSG is to generate specifications for each execution of a entry. 
 To achieve this, KSG utilizes Clang Static Analyzer, a source code level symbolic executoin engine, to collect parameters' types under each path with a type propagation algorithm.
 
 
 KSG is proved to be practical and effective by the evaluation results that 2433 specifications can be automatically generated and 23 vulnerabilities were discovered. 
-The tool is implemented with two eBPF program for extry extractioin, multiple CSA checkers for type collection (in C++), and a simple control program for automating the whole process (in rust), with roughly 8000 lines of code.
+The tool is implemented with two eBPF programs for extry extractioin, multiple CSA checkers for type collection (in C++), and a simple control program for automating the whole process (in rust), with roughly 8000 lines of code.
 For some reason, I can not make the source code public avaliable, sorry for that.
 For more information, checkout this ATC '22 [paper](/assets/pdf/KSG_atc22.pdf) please.
