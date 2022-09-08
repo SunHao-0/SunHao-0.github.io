@@ -1,12 +1,31 @@
 ---
 ---
 
-@inproceedings {KSG,
-author = {Hao, Sun and Yuheng, Shen and Jianzhong, Liu and Yiru, Xu and Yu, Jiang},
-title = {{KSG: Augmenting Kernel Fuzzing with System Call Specification Generation}},
+@article{Tardis,
+author = {Yuheng, Shen and Yiru, Xu and Hao, Sun and Jianzhong, Liu and Zichen, Xu and Aiguo, Cui and Heyuan, Shi and Yu Jiang},
+title = {{Tardis: Coverage-Guided Embedded Operating System Fuzzing}},
 year = {2022},
+publisher = {Association for Computing Machinery},
+journal = {ACM Trans. Embed. Comput. Syst.},
+keywords = {RTOS, Fuzz testing, vulnerability detection},
+abstract = {Embedded Operating Systems are extensively deployed in many mission-critical industrial scenarios. Any defects within these systems may result in unacceptable losses. Therefore, it is imperative to develop tools to detect bugs within Embedded Operating Systems, thus minimizing potential impacts on industrial infrastructures. Coverage guided fuzzing is a vulnerability detection technique that has found numerous realworld vulnerabilities within both application programs as well as kernels. However, state-of-the-art kernel fuzzers, e.g., Syzkaller, mainly target general purpose operating systems, such as Linux, macOS, and Windows, whereas Embedded Operating System support is mostly lacking.  In this paper, we propose Tardis, the first Embedded Operating System fuzzer capable of testing a wide selection of Embedded Operating Systems while leveraging coverage feedback. Tardis conducts OS-agnostic code coverage collection and analysis, allowing developers and testers to test a wide range of Embedded Operating Systems without significant manual efforts. We implemented and evaluated Tardis on several well-known Embedded Operating Systems, such as UC/OS and FreeRTOS. Tardis can successfully perform fuzz testing on these kernels without significant manual effort for adaptation. By leveraging coverage feedback, Tardis can cover 51.32% more branches than black-box fuzzing on average on the respective Embedded Operating Systems over 24 hours. Tardis also found 17 previously unknown bugs among the target Embedded Operating System},
+
+abbr={EMSOFT '22},
+pdf={Tardis_emsoft22.pdf},
+bibtex_show={true},
+}
+
+@inproceedings {KSG,
+author = {Hao Sun and Yuheng Shen and Jianzhong Liu and Yiru Xu and Yu Jiang},
+title = {{KSG}: Augmenting Kernel Fuzzing with System Call Specification Generation},
 booktitle = {2022 USENIX Annual Technical Conference (USENIX ATC 22)},
+year = {2022},
+isbn = {978-1-939133-29-20},
+address = {Carlsbad, CA},
+pages = {351--366},
+url = {https://www.usenix.org/conference/atc22/presentation/sun},
 publisher = {USENIX Association},
+month = jul,
 abstract = {Kernel fuzzing is a dynamic testing technique that has successfully found numerous kernel vulnerabilities. However, existing kernel fuzzers, such as Syzkaller, depend on system call specifications to generate test cases. Writing such specifications requires an immense amount of domain knowledge while being extremely laborious. Meanwhile, automated generation of the specification is still an open problem due to the complexity of the kernel, including entry function extraction and input type identification. As a result, the current amount of system call information is insufficient to test the entire kernel code base thoroughly. Syzkaller covers an average of 38% of Linux kernel code with current Syzlang specifications for a prolonged time of fuzzing. In this paper, we propose KSG to generate system call specifications for kernel fuzzers automatically. First, it utilizes probe-based tracing to extract entry functions accurately. Then, it uses path-sensitive analysis to collect precise input types and range constraints in each execution path of entry functions. Based on the aforementioned information, KSG generates specifications in the domain language Syzlang, which is used by most kernel fuzzers. We evaluated KSG on several versions of the Linux kernel. It automatically generated 2433 unique specifications. Leveraging the newly generated specifications, Syzkaller and Moonshine achieved coverage improvements of 22% and 23% respectively. Furthermore, our approach assisted fuzzers to discover 26 previously unknown bugs, where 13 and 6 bugs were fixed and assigned with CVEs, respectively.},
 
 abbr={ATC '22},
