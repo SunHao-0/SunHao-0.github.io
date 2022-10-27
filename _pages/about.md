@@ -19,8 +19,6 @@ selected_papers: true
 social: false 
 ---
 
-**I plan to pursue a Ph.D. degree after graduation (in 2023). Please email me if my works interest you.**
-
 I'm a system security researcher at Tsinghua University, focusing on operating system kernels, with an emphasis on Linux. 
 The fundamental goal of my research is to improve the correctness of OS kernels, one of the most complicated software, via finding and eliminating the bugs with the approaches called *fuzz testing* and *symbolic execution*.
 
