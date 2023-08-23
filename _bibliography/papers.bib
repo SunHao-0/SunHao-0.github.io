@@ -1,5 +1,24 @@
 ---
 ---
+@article{Horus,
+author = {Jianzhong, Liu and Yuheng, Shen and Yiru, Xu and Hao, Sun and Yu, Jiang},
+title = {Horus: Accelerating Kernel Fuzzing Through Efficient Host-VM Memory Access Procedures},
+year = {2023},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+issn = {1049-331X},
+url = {https://doi.org/10.1145/3611665},
+doi = {10.1145/3611665},
+abstract = {Kernel fuzzing is an effective technique in operating system vulnerability detection. Fuzzers such as Syzkaller and Moonshine frequently pass highly structured data between fuzzer processes in guest virtual machines and manager processes in the host operating system to synchronize fuzzing-relevant data and information. Since the guest virtual machines’ and the host operating system’s memory spaces are mutually isolated, fuzzers conduct synchronization operations using mechanisms such as Remote Procedure Calls over TCP/IP networks, incurring significant overheads that negatively impact the fuzzer’s efficiency and effectiveness in increasing code coverage and finding vulnerabilities. In this paper, we propose Horus, a kernel fuzzing data transfer mechanism that mitigates the aforementioned data transfer overheads. Horus removes host-VM memory isolation and performs data transfers through copying to and from target memory locations in the guest virtual machine. Horus facilitates such efficient transfers through using fixed stub structures in the guest’s memory space, whose addresses, along with the guest’s RAM contents, are exposed to the host during the fuzzer’s initialization process. When conducting transfers, Horus passes highly-structured non-trivial data between the host and guest instances through copying the data directly to and from the stub structures, reducing the overall overhead signficantly compared to that of using a network-based approach. We implemented Horus upon state-of-the-art kernel fuzzers Syzkaller, Moonshine and kAFL and evaluated its effectiveness. For Syzkaller and Moonshine, Horus increased their transfer speeds by 84.5\% and 85.8\% for non-trivial workloads on average and improved their fuzzing throughputs by 31.07\% and 30.62\%, respectively. Syzkaller and Moonshine both achieved a coverage speedup of 1.6 \texttimes{} through using Horus. For kAFL, Horus improved specifically its Redqueen component’s execution speeds by (19.4\% ) .},
+note = {Just Accepted},
+journal = {ACM Trans. Softw. Eng. Methodol.},
+month = {aug},
+keywords = {kernel fuzzing, security, performance enhancement, testing},
+
+abbr={TOSEM},
+pdf={horus.pdf},
+bibtex_show={true},
+}
 
 @article{Tardis,
 author = {Yuheng, Shen and Yiru, Xu and Hao, Sun and Jianzhong, Liu and Zichen, Xu and Aiguo, Cui and Heyuan, Shi and Yu Jiang},
