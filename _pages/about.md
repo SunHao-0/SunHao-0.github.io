@@ -5,12 +5,12 @@ permalink: /
 
 profile:
   name: Hao Sun
-  degree: Ph.D. student, advised by <a href="https://people.inf.ethz.ch/suz/">Prof. Zhendong Su</a>
+  degree: Ph.D. student, supervised by <a href="https://people.inf.ethz.ch/suz/">Prof. Zhendong Su</a>
   group: <a href="https://ast.ethz.ch">Advanced Software Technologies (AST) Lab</a>
   institute:  <a href="https://inf.ethz.ch/">Department of Computer Science</a>
   university: <a href="https://ethz.ch/en.html"> ETH Zurich </a>
   location:  CNB H 103.2, Universitätstrasse 6, 8092 Zürich, Switzerland
-  email: sunhao.th@gmail.com
+  email: hao.sun#inf.ethz.ch
   image: me.jpg
   image_cicular: false
 
