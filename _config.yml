@@ -101,15 +101,15 @@ collections:
   software:
     defaults:
       layout: post
-    output: true
+    output: false
     permalink: /software/:path/
   news:
     defaults:
       layout: post
-    output: true
+    output: false
     permalink: /news/:path/
   projects:
-    output: true
+    output: false
     permalink: /projects/:path/
 
 news_scrollable: false  # adds a vertical scroll bar if there are more than 3 news items

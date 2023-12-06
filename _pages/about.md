@@ -14,16 +14,14 @@ profile:
   image: me.jpg
   image_cicular: false
 
-news: true
-selected_papers: true 
-social: false 
+news: false
+selected_papers: false
+social: false
 ---
 
-I'm a system security researcher at ETH Zurich, focusing on operating system kernels, with an emphasis on Linux. 
-The fundamental goal of my research is to improve the correctness of OS kernels, one of the most complicated software, via finding and eliminating the bugs with the approaches called *fuzz testing* and *symbolic execution*.
+Hao Sun is currently a Ph.D. student in the Advanced Software Technologies (AST) Lab at ETH Zurich, under the supervision of Prof. [Zhendong Su](https://people.inf.ethz.ch/suz/).
+Before this, Hao Sun received his master's degree from Tsinghua University, supervised by Prof. [Yu Jiang](https://sites.google.com/site/jiangyu198964).
 
-I designed and implemented a kernel fuzzer called [Healer](https://github.com/SunHao-0/healer), which is open-sourced and has found more than 100 bugs in Linux. 
-This work was accepted by [**SOSP '21**](https://dl.acm.org/doi/10.1145/3477132.3483547).
-My recent work KSG, a kernel specification generator, has led to the discovery of 23 bugs in Linux and was accepted by **ATC '22**.
-Besides, I'm also interested in system works and the idea of redesigning the software stack with current security and privacy concerns in mind is fascinating to me.
-
+He aims to propose solutions that are novel at the conceptual level and practical for real impact.
+The fundamental goal of his research is to improve the correctness of OS kernels (with an emphasis on Linux), one of the most complicated software, via detecting logic bugs with principled ideas and enhancing the kernel infrastructure with effective mechanisms. 
+Recently, he has been particular interested in the eBPF verifier, a critical component for Linux kernel security.
