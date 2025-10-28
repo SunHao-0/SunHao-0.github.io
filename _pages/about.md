@@ -22,6 +22,4 @@ social: false
 Hao Sun is currently a Ph.D. student in the Advanced Software Technologies (AST) Lab at ETH Zurich, under the supervision of Prof. [Zhendong Su](https://people.inf.ethz.ch/suz/).
 Before this, Hao Sun received his master's degree from Tsinghua University, supervised by Prof. [Yu Jiang](https://sites.google.com/site/jiangyu198964).
 
-He aims to propose solutions that are novel at the conceptual level and practical for real impact.
-The fundamental goal of his research is to improve the correctness of OS kernels (with an emphasis on Linux), one of the most complicated software, via detecting logic bugs with principled ideas and enhancing the kernel infrastructure with effective mechanisms. 
-Recently, he has been particular interested in the eBPF verifier, a critical component for Linux kernel security.
+He aims to make kernel extensibility safe, flexible, and efficient by combining program analysis, testing & formal verification, and mechanized proof. His research targets complex OS kernels—particularly Linux—by detecting logic bugs, strengthening kernel invariants, and designing practical infrastructure and checks that enable secure extensibility. Recently he has focused on the eBPF verifier as a key component for enabling powerful yet trustworthy in-kernel extensions. The overarching goal is principled solutions that are deployable in practice and yield measurable improvements in kernel correctness and security.

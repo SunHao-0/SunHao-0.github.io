@@ -1,5 +1,55 @@
 ---
 ---
+@inproceedings{10.1145/3731569.3764796,
+author = {Sun, Hao and Su, Zhendong},
+title = {Prove It to the Kernel: Precise Extension Analysis via Proof-Guided Abstraction Refinement},
+year = {2025},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3731569.3764796},
+doi = {10.1145/3731569.3764796},
+booktitle = {Proceedings of the ACM SIGOPS 31st Symposium on Operating Systems Principles},
+pages = {736–751},
+numpages = {16},
+location = {Lotte Hotel World, Seoul, Republic of Korea},
+abbr = {SOSP '25},
+pdf = {BCF.pdf}
+}
+
+@inproceedings{10.5555/3766078.3766461,
+author = {Su, Zhendong and Sun, Hao},
+title = {Approximation enforced execution of untrusted linux kernel extensions},
+year = {2025},
+publisher = {USENIX Association},
+address = {USA},
+booktitle = {Proceedings of the 34th USENIX Conference on Security Symposium},
+location = {Seattle, WA, USA},
+abbr = {SEC '25},
+pdf = {AEE.pdf}
+}
+
+@inproceedings{10.5555/3768039.3768125,
+author = {Guo, Hui and Sun, Hao and Huang, Shan and Su, Ting and Pu, Geguang and Li, Shaohua},
+title = {Optimizing input minimization in kernel fuzzing},
+year = {2025},
+isbn = {978-1-939133-48-9},
+publisher = {USENIX Association},
+address = {USA},
+booktitle = {Proceedings of the 2025 USENIX Conference on Usenix Annual Technical Conference},
+abbr = {USENIX ATC '25}
+}
+
+@inproceedings{10.5555/3766078.3766464,
+author = {Ma, Fuchen and Chen, Yuanliang and Zhou, Yuanhang and Yan, Zhen and Sun, Hao and Jiang, Yu},
+title = {Finding metadata inconsistencies in distributed file systems via cross-node operation modeling},
+year = {2025},
+isbn = {978-1-939133-52-6},
+publisher = {USENIX Association},
+address = {USA},
+booktitle = {Proceedings of the 34th USENIX Conference on Security Symposium},
+abbr = {SEC '25}
+}
+
 @inproceedings{sev,
 author = {Hao, Sun and Zhendong, Su},
 title = {Validating the eBPF Verifier via State Embedding},
@@ -147,15 +197,15 @@ pdf={rtkaller_emsoft21.pdf},
 bibtex_show={true},
 }
 
-@inproceedings{GoSanitizer,  
-author={Cong, Wang and Hao, Sun and Yiwen, Xu and Yu, Jiang and Huafeng, Zhang and Ming, Gu},  
-booktitle={2019 IEEE International Symposium on Software Reliability Engineering Workshops (ISSREW)},   
-title={Go-Sanitizer: Bug-Oriented Assertion Generation for Golang},   
-year={2019},  
-volume={},  
-number={},  
+@inproceedings{GoSanitizer,
+author={Cong, Wang and Hao, Sun and Yiwen, Xu and Yu, Jiang and Huafeng, Zhang and Ming, Gu},
+booktitle={2019 IEEE International Symposium on Software Reliability Engineering Workshops (ISSREW)},
+title={Go-Sanitizer: Bug-Oriented Assertion Generation for Golang},
+year={2019},
+volume={},
+number={},
 abstract={Go programming language (Golang) is widely used, and the security issue becomes increasingly important because of its extensive applications. Most existing validation techniques, such as fuzz testing and unit testing, mainly focus on crashes detection and coverage improvements. However, it is challenging for test engines to perceive common program bugs such as loss of precision and integer overflow. In this paper, we propose Go-Sanitizer, an effective bug-oriented assertion generator for Golang, which is able to achieve a better performance in finding program bugs. Firstly, we manually analyze the Common Weakness Enumeration (CWE) and summarize the applicabilities on Golang. Secondly, we design a generator to automatically insert several bug-oriented assertions to the proper locations of the target program. Finally, we can utilize the traditional validation techniques such as fuzz and unit testing to test the programs with inserted assertions, and Go-Sanitizer reports bugs via the failures of assertions. For evaluation, we apply Go-Sanitizer to Badger, a widely-used database software, and successfully discovers 12 previously unreported program bugs, which can not be detected by pure fuzzer such as Go-Fuzz or unit testing methods.},
-pages={36--41},  
+pages={36--41},
 doi={10.1109/ISSREW.2019.00039},
 
 abbr={ISSRE '19},
