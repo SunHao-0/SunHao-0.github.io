@@ -1,7 +1,7 @@
 ---
 ---
 @inproceedings{10.1145/3731569.3764796,
-author = {Sun, Hao and Su, Zhendong},
+author = {Hao, Sun and Zhendong, Su},
 title = {Prove It to the Kernel: Precise Extension Analysis via Proof-Guided Abstraction Refinement},
 year = {2025},
 publisher = {Association for Computing Machinery},
@@ -10,7 +10,7 @@ doi = {10.1145/3731569.3764796},
 booktitle = {Proceedings of SOSP},
 pages = {736–751},
 numpages = {16},
-location = {Lotte Hotel World, Seoul, Republic of Korea},
+location = {Seoul, Republic of Korea},
 abbr = {SOSP '25},
 pdf = {BCF.pdf},
 note = {Best Paper Award},
@@ -20,8 +20,8 @@ code = {https://github.com/SunHao-0/BCF}
 }
 
 @inproceedings{10.5555/3766078.3766461,
-author = {Su, Zhendong and Sun, Hao},
-title = {Approximation enforced execution of untrusted linux kernel extensions},
+author = {Hao, Sun and Zhendong, Su},
+title = {Approximation Enforced Execution of Untrusted Linux Kernel Extensions},
 year = {2025},
 publisher = {USENIX Association},
 address = {USA},
@@ -32,8 +32,8 @@ pdf = {AEE.pdf}
 }
 
 @inproceedings{10.5555/3768039.3768125,
-author = {Guo, Hui and Sun, Hao and Huang, Shan and Su, Ting and Pu, Geguang and Li, Shaohua},
-title = {Optimizing input minimization in kernel fuzzing},
+author = {Hui, Guo and Hao, Sun and Shan, Huang and Ting, Su and Geguang, Pu and Shaohua, Li},
+title = {Optimizing Input Minimization in Kernel Fuzzing},
 year = {2025},
 isbn = {978-1-939133-48-9},
 publisher = {USENIX Association},
@@ -43,8 +43,8 @@ abbr = {ATC '25}
 }
 
 @inproceedings{10.5555/3766078.3766464,
-author = {Ma, Fuchen and Chen, Yuanliang and Zhou, Yuanhang and Yan, Zhen and Sun, Hao and Jiang, Yu},
-title = {Finding metadata inconsistencies in distributed file systems via cross-node operation modeling},
+author = {Fuchen, Ma and Yuanliang, Chen and Yuanhang, Zhou and Zhen, Yan and Hao, Sun and Yu, Jiang},
+title = {Finding Metadata Inconsistencies in Distributed File Systems via Cross-Node Operation Modeling},
 year = {2025},
 isbn = {978-1-939133-52-6},
 publisher = {USENIX Association},
@@ -105,7 +105,6 @@ issn = {1049-331X},
 url = {https://doi.org/10.1145/3611665},
 doi = {10.1145/3611665},
 abstract = {Kernel fuzzing is an effective technique in operating system vulnerability detection. Fuzzers such as Syzkaller and Moonshine frequently pass highly structured data between fuzzer processes in guest virtual machines and manager processes in the host operating system to synchronize fuzzing-relevant data and information. Since the guest virtual machines’ and the host operating system’s memory spaces are mutually isolated, fuzzers conduct synchronization operations using mechanisms such as Remote Procedure Calls over TCP/IP networks, incurring significant overheads that negatively impact the fuzzer’s efficiency and effectiveness in increasing code coverage and finding vulnerabilities. In this paper, we propose Horus, a kernel fuzzing data transfer mechanism that mitigates the aforementioned data transfer overheads. Horus removes host-VM memory isolation and performs data transfers through copying to and from target memory locations in the guest virtual machine. Horus facilitates such efficient transfers through using fixed stub structures in the guest’s memory space, whose addresses, along with the guest’s RAM contents, are exposed to the host during the fuzzer’s initialization process. When conducting transfers, Horus passes highly-structured non-trivial data between the host and guest instances through copying the data directly to and from the stub structures, reducing the overall overhead signficantly compared to that of using a network-based approach. We implemented Horus upon state-of-the-art kernel fuzzers Syzkaller, Moonshine and kAFL and evaluated its effectiveness. For Syzkaller and Moonshine, Horus increased their transfer speeds by 84.5\% and 85.8\% for non-trivial workloads on average and improved their fuzzing throughputs by 31.07\% and 30.62\%, respectively. Syzkaller and Moonshine both achieved a coverage speedup of 1.6 \texttimes{} through using Horus. For kAFL, Horus improved specifically its Redqueen component’s execution speeds by (19.4\% ) .},
-note = {Just Accepted},
 journal = {ACM Trans. Softw. Eng. Methodol.},
 month = {aug},
 keywords = {kernel fuzzing, security, performance enhancement, testing},
