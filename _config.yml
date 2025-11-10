@@ -1,8 +1,8 @@
-title:  
+title:
 first_name: Hao
 last_name: Sun
 email: sunhao.th@gmail.com
-description: > 
+description: >
   Personal site of Hao Sun.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
@@ -12,9 +12,9 @@ keywords: Hao Sun, personal site
 lang: en
 # icon:
 
-url: https://SunHao-0.github.io
-baseurl: / 
-last_updated: true 
+url: https://haosun.info
+baseurl: ""
+last_updated: true
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 
 # cv_pdf: cv.pdf
@@ -43,22 +43,22 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: SunHao-0 
-gitlab_username: 
-twitter_username: ha0_sun 
-linkedin_username: 
-scholar_userid: 9DVUpAEAAAAJ 
+github_username: SunHao-0
+gitlab_username:
+twitter_username: ha0_sun
+linkedin_username:
+scholar_userid: 9DVUpAEAAAAJ
 orcid_id:
 medium_username:
 quora_username:
-publons_id: 
+publons_id:
 research_gate_profile:
 blogger_url:
 work_url:
 keybase_username:
 wikidata_id:
-dblp_url: 
-stackoverflow_id: 
+dblp_url:
+stackoverflow_id:
 
 
 # -----------------------------------------------------------------------------
@@ -66,17 +66,17 @@ stackoverflow_id:
 # -----------------------------------------------------------------------------
 
 google_analytics: UA-220432288-2
-panelbear_analytics:  
+panelbear_analytics:
 google_site_verification: J7ZUvjlfXBYWi2shpYYR1UOsevV9_b1OGPDjUu1eWNw
-bing_site_verification:  
+bing_site_verification:
 
 # -----------------------------------------------------------------------------
 # Blog
 # -----------------------------------------------------------------------------
 
 # remove blog page for now
-# blog_name: blog 
-# blog_nav_title: blog 
+# blog_name: blog
+# blog_nav_title: blog
 # blog_description: random thoughts
 # permalink: /blog/:year/:title/
 
@@ -85,7 +85,7 @@ pagination:
   enabled: true
 
 # Comments
-disqus_shortname: hao 
+disqus_shortname: hao
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 # External sources.
@@ -198,7 +198,7 @@ jekyll-archives:
 
 scholar:
 
-  last_name: Hao 
+  last_name: Hao
   first_name: Sun
 
   style: apa
@@ -227,10 +227,10 @@ filtered_bibtex_keywords: [abbr, abstract, arxiv, bibtex_show, html, pdf, select
 # Responsive WebP Images
 # -----------------------------------------------------------------------------
 
-enable_responsive_images: true # enables responsive images for your site (recomended, see https://github.com/alshedivat/al-folio/issues/537)
+enable_responsive_images: false # disable to avoid 404s for non-generated .webp files on GitHub Pages
 
 imagemagick:
-  enabled: true # make it 'false' if not using responsive images
+  enabled: false # disabled because GitHub Pages does not build non-whitelisted plugins
   widths:
     - 480
     - 800
