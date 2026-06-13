@@ -25,6 +25,15 @@ table {
   }
 }
 
+.news {
+  table.table {
+    th, td {
+      padding-top: 0.1rem;
+      padding-bottom: 0.1rem;
+    }
+  }
+}
+
 a, table.table a {
   color: var(--global-theme-color);
   &:hover {
