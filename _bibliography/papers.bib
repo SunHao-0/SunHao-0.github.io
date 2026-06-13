@@ -1,5 +1,46 @@
 ---
 ---
+@unpublished{spec2commit,
+author = {Hao, Sun and Zenan, Li and Cong, Li and Zhendong, Su},
+title = {From Specification to Kernel Commit: Verified Code Generation on Real-World Systems},
+year = {2026},
+note = {Manuscript under submission to ASPLOS '27},
+abbr = {Preprint},
+selected = {true}
+}
+
+@unpublished{tocs-pgar,
+author = {Hao, Sun and Zhendong, Su},
+title = {Fast and Precise In-Kernel Extension Analysis via Proof-Guided Abstraction Refinement},
+year = {2026},
+note = {Invited paper; under review at ACM Transactions on Computer Systems (TOCS)},
+abbr = {TOCS}
+}
+
+@unpublished{stratified,
+author = {Zijing, Yin and Hao, Sun and David, Basin and Zhendong, Su},
+title = {Stratified Testing: Divide the Input Space, Conquer Rare Paths},
+year = {2026},
+note = {Manuscript under submission to USENIX ATC '26},
+abbr = {Preprint}
+}
+
+@unpublished{bpfext,
+author = {Yusheng, Zheng and Zhengjie, Ji and Weichen, Tao and Hao, Sun and Wei, Zhang and Dan, Williams and Andi, Quinn},
+title = {BPF-Ext: Safely Extending the eBPF Compilation Pipeline with Native Operations},
+year = {2026},
+note = {Manuscript under submission to USENIX ATC '26},
+abbr = {Preprint}
+}
+
+@unpublished{synsema,
+author = {Levin, Winter and Cong, Li and Hao, Sun and Zhendong, Su},
+title = {Synsema: Syntax-Guided Learning of Semantically Valid Programs},
+year = {2026},
+note = {Manuscript under submission to NeurIPS '26},
+abbr = {Preprint}
+}
+
 @inproceedings{10.1145/3731569.3764796,
 author = {Hao, Sun and Zhendong, Su},
 title = {Prove It to the Kernel: Precise Extension Analysis via Proof-Guided Abstraction Refinement},
@@ -16,7 +57,8 @@ pdf = {BCF.pdf},
 note = {Best Paper Award},
 award = {Best Paper Award},
 slides = {SOSP_slides.pdf},
-code = {https://github.com/SunHao-0/BCF}
+code = {https://github.com/SunHao-0/BCF},
+selected = {true}
 }
 
 @inproceedings{10.5555/3766078.3766461,
@@ -28,7 +70,8 @@ address = {USA},
 booktitle = {Proceedings of USENIX Security},
 location = {Seattle, WA, USA},
 abbr = {SEC '25},
-pdf = {AEE.pdf}
+pdf = {AEE.pdf},
+selected = {true}
 }
 
 @inproceedings{10.5555/3768039.3768125,
@@ -62,6 +105,7 @@ address = {USA},
 booktitle = {Proceedings of the 18h USENIX Conference on Operating Systems Design and Implementation},
 
 abbr={OSDI '24},
+selected={true},
 }
 
 @inproceedings{bvf,
@@ -194,7 +238,6 @@ keywords = {RTOS, task generation, Fuzz testing, vulnerability detection},
 abstract = {A real-time operating system (RTOS) is an operating system designed to meet certain real-time requirements. It is widely used in embedded applications, and its correctness is safety-critical. However, the validation of RTOS is challenging due to its complex real-time features and large code base. In this paper, we propose Rtkaller, a state-aware kernel fuzzer for the vulnerability detection in RTOS. First, Rtkaller implements an automatic task initialization to transform the syscall sequences into initial tasks with more real-time information. Then, a coverage-guided task mutation is designed to generate those tasks that explore more in-depth real-time related code for parallel execution. Moreover, Rtkaller realizes a task modification to correct those tasks that may hang during fuzzing. We evaluated it on recent versions of rt-Linux, which is one of the most widely used RTOS. Compared to the state-of-the-art kernel fuzzers Syzkaller and Moonshine, Rtkaller achieves the same code coverage at the speed of 1.7X and 1.6X , gains an increase of 26.1% and 22.0% branch coverage within 24 hours respectively. More importantly, Rtkaller has confirmed 28 previously unknown vulnerabilities that are missed by other fuzzers.},
 
 abbr={EMSOFT '21},
-selected={true},
 pdf={rtkaller_emsoft21.pdf},
 bibtex_show={true},
 }
@@ -211,7 +254,40 @@ pages={36--41},
 doi={10.1109/ISSREW.2019.00039},
 
 abbr={ISSRE '19},
-selected={true},
 pdf={gosanitizer_issre19.pdf},
 bibtex_show={true},
+}
+
+@article{SnapCC,
+author = {Jianzhong, Liu and Yuheng, Shen and Yiru, Xu and Hao, Sun and Yu, Jiang},
+title = {SnapCC: Effective File System Consistency Testing Using Systematic State Exploration},
+year = {2025},
+publisher = {Association for Computing Machinery},
+journal = {ACM Trans. Softw. Eng. Methodol.},
+abbr = {TOSEM},
+bibtex_show = {true},
+}
+
+@inproceedings{R2D2,
+author = {Yuheng, Shen and Jianzhong, Liu and Yiru, Xu and Hao, Sun and Mingzhe, Wang and Nan, Guan and Heyuan, Shi and Yu, Jiang},
+title = {Enhancing ROS System Fuzzing through Callback Tracing},
+year = {2024},
+publisher = {Association for Computing Machinery},
+url = {https://doi.org/10.1145/3650212.3652111},
+doi = {10.1145/3650212.3652111},
+booktitle = {Proceedings of the 33rd ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA)},
+abbr = {ISSTA '24},
+bibtex_show = {true},
+}
+
+@inproceedings{EmbSan,
+author = {Jianzhong, Liu and Yuheng, Shen and Yiru, Xu and Hao, Sun and Heyuan, Shi and Yu, Jiang},
+title = {Effectively Sanitizing Embedded Operating Systems},
+year = {2024},
+publisher = {Association for Computing Machinery},
+url = {https://doi.org/10.1145/3649329.3658490},
+doi = {10.1145/3649329.3658490},
+booktitle = {Proceedings of the 61st ACM/IEEE Design Automation Conference (DAC)},
+abbr = {DAC '24},
+bibtex_show = {true},
 }

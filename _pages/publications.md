@@ -2,8 +2,8 @@
 layout: page
 permalink: /pubs/
 title: PUBLICATIONS
-description: publications by categories in reverse chronological order.
-years: [2025, 2024, 2023, 2022, 2021, 2019]
+description: in reverse chronological order; entries marked <em>Preprint</em> are under submission. See also my <a href="https://scholar.google.com/citations?user=9DVUpAEAAAAJ">Google Scholar</a>.
+years: [2026, 2025, 2024, 2023, 2022, 2021, 2019]
 nav: true
 nav_order: 1
 ---
