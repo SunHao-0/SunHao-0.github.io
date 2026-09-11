@@ -19,6 +19,13 @@
     });
   }
 
+  /* On phones the nav scrolls horizontally; make sure the current page's
+     link is visible rather than hidden past the right edge. */
+  var current = document.querySelector('.topnav a.is-active');
+  if (current && current.scrollIntoView) {
+    current.scrollIntoView({ block: 'nearest', inline: 'nearest' });
+  }
+
   /* Highlight the section currently in view. */
   var links = Array.prototype.slice.call(document.querySelectorAll('.topnav a[href^="#"]'));
   if (!links.length || !("IntersectionObserver" in window)) return;

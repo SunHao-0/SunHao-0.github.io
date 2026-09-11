@@ -163,7 +163,8 @@ button:focus-visible {
 .wrap {
   max-width: var(--wrap);
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 /* ---------------------------------------------------------------- nav --- */
@@ -663,13 +664,16 @@ h3:first-child { margin-top: 0; }
 @media (max-width: 860px) {
   .about-grid,
   .two-col { grid-template-columns: 1fr; gap: 2rem; }
-  .about-grid { row-gap: 1.6rem; }
+  .about-grid,
+  .two-col { row-gap: 2.25rem; }
+  /* stacked, so the desktop column-balancing trim no longer applies */
+  #about { padding-bottom: 2.75rem; }
   .themes { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 640px) {
   body { font-size: 1.0rem; }
-  .wrap { padding: 0 1.15rem; }
+  .wrap { padding-left: 1.15rem; padding-right: 1.15rem; }
   .hero {
     grid-template-columns: 1fr;
     gap: 1.4rem;
@@ -680,8 +684,14 @@ h3:first-child { margin-top: 0; }
   .repo { grid-template-columns: 1fr; gap: 0.2rem; }
   .brand { font-size: 0.875rem; }
   .topbar-inner { gap: 0.5rem; }
-  .topnav { justify-content: flex-start; gap: 0; }
-  .topnav a { padding: 0.3rem 0.4rem; font-size: 0.78125rem; }
+  .topnav {
+    justify-content: flex-start;
+    gap: 0;
+    padding-left: 0;
+    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 0.45rem, #000 calc(100% - 1.6rem), transparent);
+            mask-image: linear-gradient(to right, transparent 0, #000 0.45rem, #000 calc(100% - 1.6rem), transparent);
+  }
+  .topnav a { padding: 0.3rem 0.36rem; font-size: 0.75rem; }
 }
 
 /* ---------------------------------------------------------------- print - */
