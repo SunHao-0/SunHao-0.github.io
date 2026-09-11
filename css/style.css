@@ -415,7 +415,7 @@ h3:first-child { margin-top: 0; }
 
 .about-grid {
   display: grid;
-  grid-template-columns: 1.3fr 1fr;
+  grid-template-columns: 1.45fr 1fr;
   column-gap: 2.9rem;
   row-gap: 1.35rem;
   align-items: start;
