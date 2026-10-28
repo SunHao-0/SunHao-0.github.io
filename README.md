@@ -6,9 +6,17 @@ no build step, no framework.
 ```
 index.html      home: about, news, research, publications, software, talks, awards, service
 teaching.html   teaching and student supervision
+linux.html      Linux kernel commits that name me
 css/style.css   the whole design; ETH Zurich palette, Inter + Source Serif 4
 js/site.js      colour-theme toggle and nav section highlighting
+tools/          linux_commits.py, which regenerates the list in linux.html
 assets/         portrait, paper PDFs, slides
+```
+
+To refresh the commit list from a mainline Linux checkout:
+
+```sh
+python3 tools/linux_commits.py ~/linux master
 ```
 
 To preview locally:

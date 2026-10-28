@@ -722,6 +722,13 @@ h3:first-child { margin-top: 0; }
 .rows-wide > li { grid-template-columns: 6.6rem 1fr; gap: 0.85rem; }
 .rows-wide > li { padding: 0.62rem 0; }
 
+/* commit hashes on linux.html */
+.rows code {
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.95em;
+  color: var(--ink-2);
+}
+
 @media (max-width: 640px) {
   .rows > li,
   .news li { grid-template-columns: 1fr; gap: 0.1rem; }

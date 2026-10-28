@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Linux Kernel Commits | Hao Sun</title>
+<meta name="description" content="Commits in mainline Linux that name Hao Sun: patches he wrote and fixes for bugs he reported.">
+<meta name="author" content="Hao Sun">
+<link rel="canonical" href="https://haosun.info/linux.html">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/me_small.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400..600;1,8..60,400&amp;display=swap">
+<link rel="stylesheet" href="css/style.css">
+<script>try{var t=localStorage.getItem('theme');if(t){document.documentElement.dataset.theme=t;}}catch(e){}</script>
+</head>
+
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="./">Hao Sun</a>
+    <nav class="topnav" aria-label="Sections">
+      <a href="index.html#research">Research</a>
+      <a href="index.html#publications">Publications</a>
+      <a href="index.html#software">Software</a>
+      <a href="index.html#talks">Talks</a>
+      <a href="index.html#service">Service</a>
+      <a href="teaching.html">Teaching</a>
+    </nav>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch colour theme">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.4v2.2M12 19.4v2.2M2.4 12h2.2M19.4 12h2.2M5.2 5.2l1.6 1.6M17.2 17.2l1.6 1.6M18.8 5.2l-1.6 1.6M6.8 17.2l-1.6 1.6"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.3A8.6 8.6 0 0 1 9.7 3.5a8.6 8.6 0 1 0 10.8 10.8Z"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<section class="wrap page-head">
+  <h1>Linux Kernel Commits</h1>
+  <p class="lede">
+    Commits in mainline Linux that name me: patches I wrote, and fixes for bugs I reported or
+    tested. Each entry gives the date the commit was applied and links to it on git.kernel.org.
+  </p>
+  <p class="note">
+    <strong>This list is incomplete.</strong> It shows only commits that carry one of my email
+    addresses. Patches that maintainers folded into other commits, and bugs I reported under
+    other names, are not listed.
+  </p>
+</section>
+
+<section class="section wrap" id="commits">
+  <ul class="rows rows-wide">
+    <!-- commits:begin -->
+    <li>
+      <span class="when">2026-09-25</span>
+      <span>bpf: Fix uninit read for helper mem args on partially spilled slots
+        <span class="where"><code>b3861495d2b2</code> &middot; <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=b3861495d2b2f7459cddf49e63fa0758ba430583">git.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2026-09-25</span>
+      <span>selftests/bpf: Test helper read of a narrow stack spill
+        <span class="where"><code>7af653d4ebf8</code> &middot; <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=7af653d4ebf8e2e17e288715cd67ccf7845f4631">git.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2026-09-25</span>
+      <span>bpf: Fix uninit read for non-fetch atomics on partially spilled slots
+        <span class="where"><code>5a84b4424db8</code> &middot; <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=5a84b4424db8ae07f0ac682ab031c37a91dce50b">git.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2026-09-25</span>
+      <span>selftests/bpf: Test non-fetch atomic on a narrow stack spill
+        <span class="where"><code>51455305b0d6</code> &middot; <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=51455305b0d6ab5a3432e0d7858f4e73f397cc95">git.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2026-03-24</span>
+      <span>bpf: Simplify tnum_step()
+        <span class="where"><code>833ef4a954e1</code> &middot; <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=833ef4a954e12485b9fd44e4e5eeb349ac194c26">git.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2026-01-13</span>
+      <span>bpf: Recognize special arithmetic shift in the verifier
+        <span class="where"><code>bffacdb80b93</code> &middot; <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=bffacdb80b93b7b5e96b26fad64cc490a6c7d6c7">git.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2024-07-29</span>
+      <span>bpf: Track equal scalars history on per-instruction level
+        <span class="where"><code>4bf79f9be434</code> &middot; <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=4bf79f9be434e000c8e12fe83b2f4402480f1460">git.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2024-01-23</span>
+      <span>bpf: Refactor ptr alu checking rules to allow alu explicitly
+        <span class="where"><code>2ce793ebe207</code> &middot; <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=2ce793ebe207328b1210bb53effd702740987148">git.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2024-01-16</span>
+      <span>selftests/bpf: Add test for alu on PTR_TO_FLOW_KEYS
+        <span class="where"><code>33772ff3b887</code> &middot; <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=33772ff3b887eb2f426ed66bcb1808837a40669c">git.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2024-01-16</span>
+      <span>bpf: Reject variable offset alu on PTR_TO_FLOW_KEYS
+        <span class="where"><code>22c7fa171a02</code> &middot; <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=22c7fa171a02d310e3a3f6ed46a698ca8a0060ed">git.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2023-12-08</span>
+      <span>bpf: Fix accesses to uninit stack slots
+        <span class="where"><code>6b4a64bafd10</code> &middot; <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=6b4a64bafd107e521c01eec3453ce94a3fb38529">git.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2023-12-07</span>
+      <span>bpf: Fix verification of indirect var-off stack access
+        <span class="where"><code>a833a17aeac7</code> &middot; <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=a833a17aeac73b33f79433d7cee68d5cafd71e4f">git.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2023-11-09</span>
+      <span>selftests/bpf: add more test cases for check_cfg()
+        <span class="where"><code>e2e57d637aa5</code> &middot; <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=e2e57d637aa5da0a2f49d83ad44e9febf95df7b4">git.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2023-11-09</span>
+      <span>bpf: handle ldimm64 properly in check_cfg()
+        <span class="where"><code>3feb263bb516</code> &middot; <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=3feb263bb516ee7e1da0acd22b15afbb9a7daa19">git.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2023-11-09</span>
+      <span>bpf: fix control-flow graph checking in privileged mode
+        <span class="where"><code>10e14e9652bf</code> &middot; <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=10e14e9652bf9e8104151bfd9200433083deae3d">git.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2023-11-01</span>
+      <span>selftests/bpf: Add test for immediate spilled to stack
+        <span class="where"><code>85eb035e6cfd</code> &middot; <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=85eb035e6cfd615071256592e1dbe72c1d99c24b">git.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2023-11-01</span>
+      <span>bpf: Fix check_stack_write_fixed_off() to correctly spill imm
+        <span class="where"><code>811c363645b3</code> &middot; <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=811c363645b33e6e22658634329e95f383dfc705">git.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2023-01-18</span>
+      <span>bpf: Fix a possible task gone issue with bpf_send_signal[_thread]() helpers
+        <span class="where"><code>bdb7fdb0aca8</code> &middot; <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=bdb7fdb0aca8b96cef9995d3a57e251c2289322f">git.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2023-01-18</span>
+      <span>mm: new primitive kvmemdup()
+        <span class="where"><code>0b7b8704ddce</code> &middot; <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=0b7b8704ddcee372099a2bc6781db6ab273a85d5">git.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2023-01-06</span>
+      <span>bpf: Skip invalid kfunc call in backtrack_insn
+        <span class="where"><code>d3178e8a434b</code> &middot; <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=d3178e8a434b58678d99257c0387810a24042fb6">git.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2023-01-06</span>
+      <span>bpf: Skip task with pid=1 in send_signal_common()
+        <span class="where"><code>a3d81bc1eaef</code> &middot; <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=a3d81bc1eaef48e34dd0b9b48eefed9e02a06451">git.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2022-12-22</span>
+      <span>selftests/bpf: check null propagation only neither reg is PTR_TO_BTF_ID
+        <span class="where"><code>cedebd74cf38</code> &middot; <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=cedebd74cf3883f0384af9ec26b4e6f8f1964dd4">git.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2022-12-22</span>
+      <span>bpf: fix nullness propagation for reg to reg comparisons
+        <span class="where"><code>8374bfd5a3c9</code> &middot; <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=8374bfd5a3c90a5b250f7c087c4d2b8ac467b12e">git.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2022-12-19</span>
+      <span>bpf: Remove trace_printk_lock
+        <span class="where"><code>e2bb9e01d589</code> &middot; <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=e2bb9e01d589f7fa82573aedd2765ff9b277816a">git.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2022-12-14</span>
+      <span>bpf: Synchronize dispatcher update with bpf_dispatcher_xdp_func
+        <span class="where"><code>4121d4481b72</code> &middot; <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=4121d4481b72501aa4d22680be4ea1096d69d133">git.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2022-09-01</span>
+      <span>fs: fix UAF/GPF bug in nilfs_mdt_destroy
+        <span class="where"><code>2e488f13755f</code> &middot; <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=2e488f13755ffbb60f307e991b27024716a33b29">git.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2022-08-31</span>
+      <span>bpf: Propagate error from htab_lock_bucket() to userspace
+        <span class="where"><code>66a7a92e4d0d</code> &middot; <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=66a7a92e4d0d091e79148a4c6ec15d1da65f4280">git.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2022-04-01</span>
+      <span>nilfs2: fix lockdep warnings in page operations for btree nodes
+        <span class="where"><code>e897be17a441</code> &middot; <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=e897be17a441fa637cd166fc3de1445131e57692">git.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2022-04-01</span>
+      <span>nilfs2: get rid of nilfs_mapping_init()
+        <span class="where"><code>cdd81b313d5e</code> &middot; <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=cdd81b313d5e09e8a248c2dbd9c6b069f82e5d71">git.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2022-04-01</span>
+      <span>nilfs2: fix lockdep warnings during disk space reclamation
+        <span class="where"><code>6e211930f79a</code> &middot; <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=6e211930f79aa45d422009a5f2e5467d2369ffe5">git.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2022-01-03</span>
+      <span>btrfs: fix deadlock between quota enable and other quota operations
+        <span class="where"><code>232796df8c14</code> &middot; <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=232796df8c1437c41d308d161007f0715bac0a54">git.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2021-11-15</span>
+      <span>cgroup: rstat: Mark benign data race to silence KCSAN
+        <span class="where"><code>eda09706b240</code> &middot; <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=eda09706b240ca9129ac4e1fbb4eb1e2bc67aadc">git.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2021-10-28</span>
+      <span>mm: khugepaged: skip huge page collapse for special files
+        <span class="where"><code>a4aeaa06d45e</code> &middot; <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=a4aeaa06d45e90f9b279f0b09de84bd00006e733">git.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2021-10-26</span>
+      <span>btrfs: fix deadlock between chunk allocation and chunk btree modifications
+        <span class="where"><code>2bb2e00ed978</code> &middot; <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=2bb2e00ed9787e52580bb651264b8d6a2b7a9dd2">git.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2021-10-18</span>
+      <span>block: fix incorrect references to disk objects
+        <span class="where"><code>9fbfabfda25d</code> &middot; <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=9fbfabfda25d8774c5a08634fdd2da000a924890">git.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2021-10-18</span>
+      <span>vfs: check fd has read access in kernel_read_file_from_fd()
+        <span class="where"><code>032146cda855</code> &middot; <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=032146cda85566abcd1c4884d9d23e4e30a07e9a">git.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2021-10-07</span>
+      <span>btrfs: unlock newly allocated extent buffer after error
+        <span class="where"><code>19ea40dddf18</code> &middot; <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=19ea40dddf1833db868533958ca066f368862211">git.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2021-09-22</span>
+      <span>RDMA/cma: Do not change route.addr.src_addr.ss_family
+        <span class="where"><code>bc0bdc5afaa7</code> &middot; <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=bc0bdc5afaa740d782fbf936aaeebd65e5c2921d">git.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2021-09-08</span>
+      <span>io-wq: fix cancellation on create-worker failure
+        <span class="where"><code>713b9825a4c4</code> &middot; <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=713b9825a4c47897f66ad69409581e7734a8728e">git.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2021-04-20</span>
+      <span>KVM: Stop looking for coalesced MMIO zones if the bus is destroyed
+        <span class="where"><code>5d3c4c79384a</code> &middot; <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=5d3c4c79384af06e3c8e25b7770b6247496b4417">git.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2021-04-15</span>
+      <span>tty: n_gsm: check error while registering tty devices
+        <span class="where"><code>0a360e8b65d6</code> &middot; <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=0a360e8b65d62fe1a994f0a8da4f8d20877b2100">git.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2021-04-09</span>
+      <span>ext4: annotate data race in jbd2_journal_dirty_metadata()
+        <span class="where"><code>83fe6b18b8d0</code> &middot; <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=83fe6b18b8d04c6c849379005e1679bac9752466">git.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2020-05-28</span>
+      <span>fs/binfmt_elf.c: allocate initialized memory in fill_thread_core_info()
+        <span class="where"><code>1d605416fb71</code> &middot; <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=1d605416fb7175e1adf094251466caa52093b413">git.kernel.org</a></span></span>
+    </li>
+    <!-- commits:end -->
+  </ul>
+  <p class="note">
+    Generated from the mainline Linux history on <time id="generated" datetime="2026-10-28">28 October 2026</time>.
+  </p>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>&copy; 2026 Hao Sun</span>
+    <span>Last updated October 2026</span>
+  </div>
+</footer>
+
+<script src="js/site.js"></script>
+</body>
+</html>
