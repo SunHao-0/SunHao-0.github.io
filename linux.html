@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Linux Kernel Commits | Hao Sun</title>
-<meta name="description" content="Commits in mainline Linux that name Hao Sun: patches he wrote and fixes for bugs he reported.">
+<meta name="description" content="Hao Sun's Linux kernel contributions: patches under review, merged patches, and fixes for bugs he reported or tested.">
 <meta name="author" content="Hao Sun">
 <link rel="canonical" href="https://haosun.info/linux.html">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
@@ -41,17 +41,114 @@
 <section class="wrap page-head">
   <h1>Linux Kernel Commits</h1>
   <p class="lede">
-    Commits in mainline Linux that name me: patches I wrote, and fixes for bugs I reported or
-    tested. Each entry gives the date the commit was applied and links to it on git.kernel.org.
+    Linux kernel patches I wrote, and fixes for bugs I reported or tested. Patches under review
+    show their submission date and link to the mailing list; merged commits show the date they
+    were applied and link to git.kernel.org.
   </p>
   <p class="note">
-    <strong>This list is incomplete.</strong> It shows only commits that carry one of my email
-    addresses. Patches that maintainers folded into other commits, and bugs I reported under
+    <strong>This list is incomplete.</strong> The merged list shows only commits that carry one of
+    my email addresses. Patches that maintainers folded into other commits, and bugs I reported under
     other names, are not listed.
   </p>
 </section>
 
+<section class="section wrap" id="under-review">
+  <h2>Under review</h2>
+  <p class="note">
+    RFC series: <a href="https://lore.kernel.org/bpf/20251106125255.1969938-1-hao.sun@inf.ethz.ch/">bpf: Introduce proof-based verifier enhancement</a>
+    (17 patches).
+  </p>
+  <ul class="rows rows-wide">
+    <li>
+      <span class="when">2025-11-06</span>
+      <span>bpf: Add BCF expr and proof rule definitions
+        <span class="where">Under review &middot; RFC 01/17 &middot; <a href="https://lore.kernel.org/bpf/20251106125255.1969938-2-hao.sun@inf.ethz.ch/">lore.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2025-11-06</span>
+      <span>bpf: Add bcf_checker top-level workflow
+        <span class="where">Under review &middot; RFC 02/17 &middot; <a href="https://lore.kernel.org/bpf/20251106125255.1969938-3-hao.sun@inf.ethz.ch/">lore.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2025-11-06</span>
+      <span>bpf: Add UAPI fields for BCF proof interaction
+        <span class="where">Under review &middot; RFC 03/17 &middot; <a href="https://lore.kernel.org/bpf/20251106125255.1969938-4-hao.sun@inf.ethz.ch/">lore.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2025-11-06</span>
+      <span>bpf: Add top-level workflow of bcf_refine()
+        <span class="where">Under review &middot; RFC 04/17 &middot; <a href="https://lore.kernel.org/bpf/20251106125255.1969938-5-hao.sun@inf.ethz.ch/">lore.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2025-11-06</span>
+      <span>bpf: Add top-level workflow of bcf_track()
+        <span class="where">Under review &middot; RFC 05/17 &middot; <a href="https://lore.kernel.org/bpf/20251106125255.1969938-6-hao.sun@inf.ethz.ch/">lore.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2025-11-06</span>
+      <span>bpf: Add bcf_match_path() to follow the path suffix
+        <span class="where">Under review &middot; RFC 06/17 &middot; <a href="https://lore.kernel.org/bpf/20251106125255.1969938-7-hao.sun@inf.ethz.ch/">lore.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2025-11-06</span>
+      <span>bpf: Add bcf_expr management and binding
+        <span class="where">Under review &middot; RFC 07/17 &middot; <a href="https://lore.kernel.org/bpf/20251106125255.1969938-8-hao.sun@inf.ethz.ch/">lore.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2025-11-06</span>
+      <span>bpf: Track mov and signed extension
+        <span class="where">Under review &middot; RFC 08/17 &middot; <a href="https://lore.kernel.org/bpf/20251106125255.1969938-9-hao.sun@inf.ethz.ch/">lore.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2025-11-06</span>
+      <span>bpf: Track alu operations in bcf_track()
+        <span class="where">Under review &middot; RFC 09/17 &middot; <a href="https://lore.kernel.org/bpf/20251106125255.1969938-10-hao.sun@inf.ethz.ch/">lore.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2025-11-06</span>
+      <span>bpf: Add bcf_alu() 32bits optimization
+        <span class="where">Under review &middot; RFC 10/17 &middot; <a href="https://lore.kernel.org/bpf/20251106125255.1969938-11-hao.sun@inf.ethz.ch/">lore.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2025-11-06</span>
+      <span>bpf: Track stack spill/fill in bcf_track()
+        <span class="where">Under review &middot; RFC 11/17 &middot; <a href="https://lore.kernel.org/bpf/20251106125255.1969938-12-hao.sun@inf.ethz.ch/">lore.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2025-11-06</span>
+      <span>bpf: Track path constraint
+        <span class="where">Under review &middot; RFC 12/17 &middot; <a href="https://lore.kernel.org/bpf/20251106125255.1969938-13-hao.sun@inf.ethz.ch/">lore.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2025-11-06</span>
+      <span>bpf: Skip state pruning for the parent states
+        <span class="where">Under review &middot; RFC 13/17 &middot; <a href="https://lore.kernel.org/bpf/20251106125255.1969938-14-hao.sun@inf.ethz.ch/">lore.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2025-11-06</span>
+      <span>bpf: Add mem access bound refinement
+        <span class="where">Under review &middot; RFC 14/17 &middot; <a href="https://lore.kernel.org/bpf/20251106125255.1969938-15-hao.sun@inf.ethz.ch/">lore.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2025-11-06</span>
+      <span>bpf: Preserve verifier_env and request BCF
+        <span class="where">Under review &middot; RFC 15/17 &middot; <a href="https://lore.kernel.org/bpf/20251106125255.1969938-16-hao.sun@inf.ethz.ch/">lore.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2025-11-06</span>
+      <span>bpf: Resume verifier env and check proof
+        <span class="where">Under review &middot; RFC 16/17 &middot; <a href="https://lore.kernel.org/bpf/20251106125255.1969938-17-hao.sun@inf.ethz.ch/">lore.kernel.org</a></span></span>
+    </li>
+    <li>
+      <span class="when">2025-11-06</span>
+      <span>bpf: Enable bcf for priv users
+        <span class="where">Under review &middot; RFC 17/17 &middot; <a href="https://lore.kernel.org/bpf/20251106125255.1969938-18-hao.sun@inf.ethz.ch/">lore.kernel.org</a></span></span>
+    </li>
+  </ul>
+</section>
+
 <section class="section wrap" id="commits">
+  <h2>Merged</h2>
   <ul class="rows rows-wide">
     <!-- commits:begin -->
     <li>
